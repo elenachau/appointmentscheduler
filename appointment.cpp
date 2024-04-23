@@ -73,7 +73,7 @@ void Appointment::setYear(int y){
     year = y;
 }
 
-bool Appointment::operator==(const Appointment& rhs){
+bool Appointment::operator==(const Appointment& rhs){ //equality operator overload
     if(day == rhs.day && month == rhs.month && year == rhs.year && hours == rhs.hours && minutes == rhs.minutes && isAM == rhs.isAM){
         return true;
     }
