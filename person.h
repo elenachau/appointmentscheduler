@@ -18,7 +18,7 @@ class Person{
         string getLast();
         string getUsername();
         string getPassword();
-        DynamicArray<Appointment> getBookedAppointment();
+        DynamicArray<Appointment> getBookedAppointments();
 
         void setFirst(string);
         void setLast(string);
