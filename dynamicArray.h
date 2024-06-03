@@ -9,7 +9,7 @@ template<class T> class DynamicArray{
     int currentMaxNumElements;
     int currentNumElementsStored;
 
-    void resize(const int newSize);
+    void resize(const int);
 
     public:
         DynamicArray();
@@ -17,7 +17,7 @@ template<class T> class DynamicArray{
         DynamicArray(const DynamicArray<T>& rhs);
         ~DynamicArray();
 
-        DynamicArray<T>& operator=(const DynamicArray<T> &rhs);
+        DynamicArray<T>& operator=(const DynamicArray<T>&);
 
         int getCurrentNumElementsStored() const;
         int getCurrentMaxNumElements() const;
@@ -30,5 +30,5 @@ template<class T> class DynamicArray{
         friend ofstream& operator<<(ofstream&, DynamicArray<T>);
 };
 
-#include "dynamicArray.h"
+#include "dynamicArray.cpp"
 #endif
