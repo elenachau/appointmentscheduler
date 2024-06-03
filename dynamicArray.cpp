@@ -90,7 +90,7 @@ void DynamicArray<T>::replaceElementAtIndex(int i, T newItem){
 }
 
 template <class T>
-void DynamicArray<T>::removeElementAtIndex(int i){
+void DynamicArray<T>::removeElementAtIndex(int ind){
     for(int i = 0; i < currentNumElementsStored-1; i++){
         if(i>=ind){
             array[i] = array[i+1];
